@@ -11,7 +11,7 @@ else:
     sum =number/100
     sum=sum+((number%100)%10)
     sum=sum+((number%100)/10)
-    print (int(sum))
+    print(int(sum))
 
 
 
