@@ -11,13 +11,19 @@ from random import randint
 
 n=int(input('Введите количество монеток: '))
 count=0
+count1=0
 for i in range(0,n,1):
     coinside=randint(0,1)
     print(coinside , end=' ')
     if coinside==0:
        count=count+1
+    else:
+        count1+=1
+if count<count1:
 
-print(f' Количество монет, которые нужно перевернуть :{count}')
+   print(f' Минимальное количество монет, которые нужно перевернуть :{count}')
+else:
+    print(f' Минимальное количество монет, которые нужно перевернуть :{count1}')
 
 
 
