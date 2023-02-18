@@ -10,9 +10,10 @@ y=int(input('Введите y= '))
 operation=(lambda x, y: x * y)
 def printOperationTable(operation, x, y):
     for i in range(1,x+1):
-        print('\n')                            #не знаю как выровнять табличку
+        print('\n')
         for j in range(1,y+1):
             calc=(operation(i,j))
-            print(calc, end=' ')
+            # print(calc, end=' ')
+            print(f'{calc:>4}', end=' ')
 
 printOperationTable(operation,x,y)
