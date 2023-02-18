@@ -13,7 +13,6 @@ def printOperationTable(operation, x, y):
         print('\n')
         for j in range(1,y+1):
             calc=(operation(i,j))
-            # print(calc, end=' ')
             print(f'{calc:>4}', end=' ')
 
 printOperationTable(operation,x,y)
